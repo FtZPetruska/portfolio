@@ -1,0 +1,137 @@
+:root {
+  --primary: black;
+  --bgColour: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: white;
+    --bgColour: #1b1b1b;
+  }
+}
+
+html {
+  background-color: #3b3b3b;
+
+  --rainbow1: #006795;
+  --rainbow2: #00a99d;
+  --rainbow3: #98cc70;
+  --rainbow4: #fff200;
+  --rainbow5: #fdbc42;
+  --rainbow6: #f26035;
+  --rainbow7: #ed1b23;
+}
+
+body {
+  background-color: var(--bgColour);
+  color: var(--primary);
+  margin: auto;
+  max-width: 1000px;
+  padding: 15px;
+  box-shadow: 0px 0px 12px 5px #00000061;
+}
+
+#header > * {
+  text-align: center;
+}
+
+.category {
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 2vh;
+}
+
+.category:nth-child(1) .category-header {
+  color: var(--rainbow1);
+  border-top: 1px solid var(--rainbow1);
+}
+.category:nth-child(2) .category-header {
+  color: var(--rainbow2);
+  border-top: 1px solid var(--rainbow2);
+}
+.category:nth-child(3) .category-header {
+  color: var(--rainbow3);
+  border-top: 1px solid var(--rainbow3);
+}
+.category:nth-child(4) .category-header {
+  color: var(--rainbow4);
+  border-top: 1px solid var(--rainbow4);
+}
+.category:nth-child(5) .category-header {
+  color: var(--rainbow5);
+  border-top: 1px solid var(--rainbow5);
+}
+.category:nth-child(6) .category-header {
+  color: var(--rainbow6);
+  border-top: 1px solid var(--rainbow6);
+}
+.category:nth-child(7) .category-header {
+  color: var(--rainbow7);
+  border-top: 1px solid var(--rainbow7);
+}
+
+a {
+  text-decoration: none;
+  color: #5673c8;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+#main,
+p {
+  text-align: justify;
+}
+
+.flex-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.flex-list > li {
+  flex: 0 0 33%;
+  min-width: 200px;
+}
+
+.standalone-box {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.box > .box-content {
+  padding: 10px;
+  border: 1px solid lightgray;
+  flex: 0 1 90%;
+}
+
+@media (min-width: 760px) {
+  .box > .box-content {
+    flex: 0 1 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .box > .box-content {
+    flex: 0 1 30%;
+  }
+}
+
+.box-content > h3 {
+  text-align: center;
+}
+
+.box-content > h4 {
+  text-align: center;
+}

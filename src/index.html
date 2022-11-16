@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Portfolio</h1>
+      <p>Hi, I'm Pierre Wendling. Welcome to my portfolio!</p>
+    </div>
+    <div id="main">
+      <div class="category">
+        <div class="category-header">
+          <h2><i class="material-symbols-outlined">person</i> About Me</h2>
+        </div>
+        <p>
+          I am a software developer with a passion for close to metal
+          development. I have a background in computer science, and I have a
+          strong interest in system programming. I am currently writing a master
+          thesis about IoT at Université Laval.
+        </p>
+        <p>
+          On my time off, I contribute to open-source projects such as
+          <a href="https://libsdl.org/">SDL</a>,
+          <a href="https://brew.sh/">homebrew</a>,
+          <a href="https://github.com/kraflab/dsda-doom">dsda-doom</a>, or
+          <a href="https://vcpkg.io/">vcpkg</a>. Making the latest updates of
+          your favourite software available in your local package manager.
+        </p>
+        <p>
+          Additionally, I play a variety of games (and sometimes speedrun them)!
+          My favourite genres are Rhythm Games (LoveLive), Old-School FPS
+          (Classic Doom, Heretic), Turn-Base RPG (Pokémon, Shin Megami Tensei),
+          Adventure Games (Genshin Impact, Yakuza), and Riichi Mahjong.
+        </p>
+        <p>
+          Here are a few technologies and tools I've been working with recently:
+        </p>
+        <div class="flex-list">
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>CMake</li>
+          <li>GitHub Actions</li>
+          <li>Docker</li>
+          <li>Visual Studio</li>
+          <li>VCPKG</li>
+          <li>Clang Tools</li>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="category-header">
+          <h2><i class="material-symbols-outlined">school</i> Education</h2>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <h3>Master in Computer Science</h3>
+            <h4>2020 - Present</h4>
+            <h4><a href="https://ulaval.ca">Université Laval, Québec</a></h4>
+          </div>
+          <div class="box-content">
+            <h3>Bachelor in Computer Science</h3>
+            <h3>License en Informatique Parcours International</h3>
+            <h4>2018 - 2020</h4>
+            <h4>
+              <a href="https://www.u-bordeaux.fr/"
+                >Université de Bordeaux, Bordeaux</a
+              >
+            </h4>
+          </div>
+          <div class="box-content">
+            <h3>Higher School Preparatory Classes</h3>
+            <h3>Classe Préparatoire aux Grandes Écoles</h3>
+            <h4>2017 - 2018</h4>
+            <h4>
+              <a
+                href="https://jechoisis.u-bordeaux.fr/choisir/sciences-et-technologies/annees-preparatoires/cycle-preparatoire-de-bordeaux"
+                >CPBx, Bordeaux</a
+              >
+            </h4>
+          </div>
+          <div class="box-content">
+            <h3>High School</h3>
+            <h3>General Science Diploma</h3>
+            <h4>2014 - 2017</h4>
+            <h4>
+              <a href="https://www.villapia.fr/"
+                >Lycée Saint Louis Villa Pia, Bayonne</a
+              >
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <div class="category-header">
+          <h2><i class="material-symbols-outlined">work</i> Work Experience</h2>
+        </div>
+
+        <div class="standalone-box">
+          <h3>Corrector</h3>
+          <h4>Université Laval</h4>
+          <h4>Winter Semesters 2020-2022</h4>
+          <p>
+            Correction of students' assignments and exams for the
+            telecommunications class (IFT-2006).
+          </p>
+        </div>
+
+        <div class="standalone-box">
+          <h3>Laboratory Class Preparation</h3>
+          <h4>Université Laval</h4>
+          <h4>Summer Semesters 2020-2022</h4>
+          <p>
+            Preparation of laboratory classes for the Network for Engineers
+            class (GLO-2000). These jobs consisted in the following tasks:
+          </p>
+          <ul>
+            <li>
+              Update the tools used during manipulations. Looking out for
+              deprecation and breaking changes that may affect the exercises.
+            </li>
+            <li>Update the assignments content.</li>
+            <li>
+              Update the presentations and preparation documents to provide
+              up-to-date information and teach students best practices.
+            </li>
+            <li>
+              Implement an automated test framework from scratch for student
+              assignments correction. The solution was implemented to run in a
+              Docker container to have a reproducible test environment. The test
+              suite heavily relies on mocking system resources to provide a
+              controllable behaviour and limit the possibility of side effects
+              from one assignment to the next with unreleased resources.
+            </li>
+          </ul>
+          <p>
+            To ensure the maintainability of this repository, I also migrated to
+            using Git for version control and put in place several Continuous
+            Integration mechanisms. The CI pipelines ensured the quality of both
+            documents and code on every commit. For documents, formatting,
+            linter, and compilation would be checked. For code, functional tests
+            against different versions of python and consistency checks were
+            also ran.
+          </p>
+        </div>
+
+        <div class="standalone-box">
+          <h3>Lab Class Teaching Assistant</h3>
+          <h4>Université Laval</h4>
+          <h4>Autumn Semesters 2020-2022</h4>
+          <p>
+            Present, provide support, and correct the lab classes for the
+            Network for Engineers class (GLO-2000). The lab classes provide a
+            more practical approach to networking, assignments use a variety of
+            technologies to explore the layers of the OSI model:
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.wireshark.org/">Wireshark</a> is used to
+              capture network traffic, students are taught how to analyse the
+              intercepted packets.
+            </li>
+            <li>
+              <a href="https://nmap.org/">Nping and Ncat</a> are used to forge
+              traffic, create simple clients and servers, and explore how hosts
+              respond to combinations of parameters. This allows students to
+              manipulate directly the Data Link, Network and Transport layers.
+            </li>
+            <li>
+              <a href="https://www.python.org/">Python</a> is used for socket
+              programming. Students are tasked to implement a client and a
+              server allowing them to explore the Application layer.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="category">
+        <div class="category-header">
+          <h2>
+            <i class="material-symbols-outlined">volunteer_activism</i>
+            Volunteer Experience
+          </h2>
+        </div>
+
+        <h3>Online Communities Moderation</h3>
+
+        <p>
+          In my personal time, I have been moderating for and managing several
+          online communities. Since 2019, I have been leading the Mavericks
+          faction in the video game Dx2, which usually ranks within the top 30
+          worldwide in events. I have also had the role of moderator in several
+          Twitch streams and Discord servers.
+        </p>
+
+        <h3>Charity Events</h3>
+
+        <p>
+          For the last three years, I have been participating in the 24h Charity
+          Streams supporting Extra Life. My participation consisted in helping
+          out my friend
+          <a href="https://www.twitch.tv/infernal_fangirl">Infernal Fangirl</a>
+          by moderating their chat and actively participating on stream.
+        </p>
+      </div>
+      <div class="category">
+        <div class="category-header">
+          <h2>
+            <i class="material-symbols-outlined">share</i> Open-Source
+            Contributions
+          </h2>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <h3><a href="https://github.com/libsdl-org/SDL">SDL</a></h3>
+            <ul>
+              <li>
+                Nintendo 3DS Homebrew Port (<a
+                  href="https://github.com/libsdl-org/SDL/pull/6251"
+                  >#6251</a
+                >,
+                <a href="https://github.com/libsdl-org/SDL/pull/6522">#6522</a>)
+              </li>
+              <li>
+                Math test suite (<a
+                  href="https://github.com/libsdl-org/SDL/pull/5614"
+                  >#5614</a
+                >)
+              </li>
+              <li>
+                CI Improvements (<a
+                  href="https://github.com/libsdl-org/SDL/pull/4677"
+                  >#4677</a
+                >,
+                <a href="https://github.com/libsdl-org/SDL/pull/5578">#5578</a>,
+                <a href="https://github.com/libsdl-org/SDL/pull/6372">#6372</a>)
+              </li>
+              <li>
+                Miscellaneous improvements (<a
+                  href="https://github.com/libsdl-org/SDL/pull/5622"
+                  >Clang-format</a
+                >,
+                <a href="https://github.com/libsdl-org/SDL/pull/5967"
+                  >Contribution guidelines</a
+                >,
+                <a href="https://github.com/libsdl-org/SDL/pull/6448"
+                  >Clang-tidy integration</a
+                >,
+                <a href="https://github.com/libsdl-org/SDL/pull/6523"
+                  >Ccache integration</a
+                >)
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <h3><a href="https://github.com/libsdl-org/SDL_net">SDL_net</a></h3>
+            <p>
+              CMake support with CI integration (<a
+                href="https://github.com/libsdl-org/SDL_net/pull/48"
+                >#48</a
+              >)
+            </p>
+          </div>
+          <div class="box-content">
+            <h3><a href="https://github.com/microsoft/vcpkg">VCPKG</a></h3>
+            <ul>
+              <li>
+                SDL2 update (<a
+                  href="https://github.com/microsoft/vcpkg/pull/27591"
+                  >#27591</a
+                >)
+              </li>
+              <li>
+                SDL2_net update (<a
+                  href="https://github.com/microsoft/vcpkg/pull/27459"
+                  >#27459</a
+                >)
+              </li>
+              <li>
+                SDL2_image update (<a
+                  href="https://github.com/microsoft/vcpkg/pull/27627"
+                  >#27627</a
+                >)
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/kraflab/dsda-doom">dsda-doom</a>
+            </h3>
+            <ul>
+              <li>
+                Install resources in a custom directory (<a
+                  href="https://github.com/kraflab/dsda-doom/pull/123"
+                  >#123</a
+                >)
+              </li>
+              <li>
+                Miscellaneous fixes (<a
+                  href="https://github.com/kraflab/dsda-doom/pull/122"
+                  >#122</a
+                >)
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/Kenshin9977/video-dl">Video-DL</a>
+            </h3>
+            <ul>
+              <li>
+                Initial macOS/Linux support (<a
+                  href="https://github.com/Kenshin9977/video-dl/pull/1"
+                  >#1</a
+                >)
+              </li>
+              <li>
+                Python type-hinting and CI check (<a
+                  href="https://github.com/Kenshin9977/video-dl/pull/4"
+                  >#4</a
+                >)
+              </li>
+              <li>
+                Language selection (<a
+                  href="https://github.com/Kenshin9977/video-dl/pull/5"
+                  >#5</a
+                >)
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/ngagesdk/ccleste">ccleste</a>
+            </h3>
+            <ul>
+              <li>
+                Improved CMake support (<a
+                  href="https://github.com/ngagesdk/ccleste/pull/7"
+                  >#7</a
+                >)
+              </li>
+              <li>
+                Run CI on multiple platforms (<a
+                  href="https://github.com/ngagesdk/ccleste/pull/9"
+                  >#9</a
+                >)
+              </li>
+              <li>
+                Nintendo 3DS port (<a
+                  href="https://github.com/ngagesdk/ccleste/pull/10"
+                  >#10</a
+                >)
+              </li>
+            </ul>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/Homebrew/homebrew-core"
+                >Homebrew Package Manager</a
+              >
+            </h3>
+            <ul>
+              <li>
+                New package: dsda-doom (<a
+                  href="https://github.com/Homebrew/homebrew-core/pull/108013"
+                  >#108013</a
+                >)
+              </li>
+              <li>
+                Packages updates:
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108465"
+                      >SDL2 2.24.0</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108466"
+                      >SDL2_ttf 2.20.1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108467"
+                      >SDL2_image 2.6.2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108468"
+                      >SDL2_mixer 2.6.2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108470"
+                      >SDL2_net 2.2.0</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/112374"
+                      >SDL2 2.24.1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/115014"
+                      >iwyu 0.19</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Homebrew/homebrew-core/pull/108075"
+                      >ns-3 3.36.1</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <div class="category-header">
+          <h2>
+            <i class="material-symbols-outlined">cottage</i> Personal Projects
+          </h2>
+        </div>
+
+        <div class="box">
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/FtZPetruska/trace_extractor"
+                >trace_extractor</a
+              >
+            </h3>
+            <p>
+              The UdpTraceClient class of the ns-3 simulator uses "Traces" of
+              MP4 videos. These traces consists in a text file containing
+              information for every frame. Aside from the handful of examples,
+              there was no cross-platform tools to create your own trace file,
+              so I created this python wrapper around ffprobe to automate the
+              process!
+            </p>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://ftzpetruska.github.io/SDL_tutorial/"
+                >SDL Installation Tutorial (WIP)</a
+              >
+            </h3>
+            <p>
+              One very common issue with newcomers trying to setup SDL2 is that
+              they often run into issues. This is why I decided to write my own
+              tutorial to install SDL2 and its satellite libraries on Windows,
+              macOS and Linux!
+            </p>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a
+                href="https://github.com/FtZPetruska/Yet-Another-cpp-Project-Template"
+                >Yet Another C++ Project Template</a
+              >
+            </h3>
+            <p>
+              A template C++ project inspired by
+              <a
+                href="https://github.com/cpp-best-practices/gui_starter_template"
+                >Jason Turner</a
+              >'s. It aims to only provide a subset of features, with a
+              different approach to option checking in CMake.
+            </p>
+
+            <p>
+              This project uses CMake and several tools to ensure quality and
+              cross-platform compatibility throughout the development. The tools
+              available are: VCPKG to acquire your dependencies, Clang-tidy to
+              run static analysis, Clang-format to ensure formatting is
+              respected at build time, Address and Undefined Behaviour
+              Sanitisers when available, Catch2 unit testing, and all the
+              relevant warnings the compiler provides.
+            </p>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/FtZPetruska/Kalb-jr">Kalb jr</a>
+            </h3>
+            <p>
+              A discord bot made for a friend of mine. It takes a schedule
+              written in JSON to create and delete temporary voice channels for
+              recurring events. Written from the ground up in typescript.
+            </p>
+          </div>
+          <div class="box-content">
+            <h3>
+              <a href="https://github.com/FtZPetruska/Senseless"
+                >Senseless (WIP)</a
+              >
+            </h3>
+            <p>
+              A small game project made with my awesome friend
+              <a href="https://github.com/le-smog">le_smog</a>!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="category">
+        <div class="category-header">
+          <h2><i class="material-symbols-outlined">mail</i> Contact</h2>
+        </div>
+        <p>
+          If my profile interests you, feel free to contact me
+          <a href="mailto:pierre.wendling.4@gmail.com">by email</a>!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
