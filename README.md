@@ -4,5 +4,5 @@ My personal Portfolio.
 
 ## Credits
 
-- @Mitsunee for helping me fight HTML.
+- [@Mitsunee](https://github.com/Mitsunee) for helping me fight HTML.
 - Material Symbols by Google.
